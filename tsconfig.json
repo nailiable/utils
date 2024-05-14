@@ -1,3 +1,10 @@
 {
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "types": ["vitest/globals"]
+  },
+  "include": ["src"],
   "exclude": ["*.cjs", "*.mjs"]
 }
