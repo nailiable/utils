@@ -1,8 +1,26 @@
 {
+  "name": "@naiable/util",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.8.0",
-  "author": "Zero <gczgroup@qq.com>",
+  "description": "A utility library by naily",
+  "author": "Naily <gczgroup@qq.com> (https://github.com/nailiable)",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
+    "prepublishOnly": "tsup",
     "lint": "eslint . --fix",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
@@ -15,6 +33,7 @@
     "@commitlint/types": "^17.8.1",
     "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "bumpp": "^9.4.1",
     "eslint": "^8.57.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
