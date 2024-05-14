@@ -1,6 +1,6 @@
 {
   "name": "@naiable/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@8.8.0",
   "description": "Utils library by naily",
   "author": "Naily <zero@naily.cc> (https://github.com/nailiable)",
