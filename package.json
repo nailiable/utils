@@ -54,6 +54,10 @@
     "typescript": "^5.4.2",
     "vitest": "^1.4.0"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,vue,json,scss,less,html}": [
       "eslint --fix",
