@@ -1,10 +1,19 @@
 {
-  "name": "@naiable/util",
+  "name": "@naiable/utils",
   "version": "0.0.1",
   "packageManager": "pnpm@8.8.0",
-  "description": "A utility library by naily",
-  "author": "Naily <gczgroup@qq.com> (https://github.com/nailiable)",
+  "description": "Utils library by naily",
+  "author": "Naily <zero@naily.cc> (https://github.com/nailiable)",
   "license": "MIT",
+  "homepage": "https://github.com/nailiable/utils",
+  "repository": {
+    "type": "git",
+    "url": "git+github.com:nailiable/util.git"
+  },
+  "bugs": {
+    "email": "zero@naily.cc",
+    "url": "https://github.com/nailiable/utils/issues"
+  },
   "exports": {
     ".": {
       "types": {
@@ -18,6 +27,9 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "tsup",
